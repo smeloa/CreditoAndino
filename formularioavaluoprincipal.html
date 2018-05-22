@@ -63,7 +63,7 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="sitelogo">
-                            <a href="#"><img src="asset/img/LOGO.jpg" alt="" /></a>
+                            <a href="index.html"><img src="asset/img/LOGO.jpg" alt="" /></a>
                         </div>
                     </div>
                     <div class="col-md-8">
@@ -88,6 +88,9 @@
                                     </p>
                                 </div>
                             </div>
+                            <div class="single-address">
+                                <a href="formulariocredito.html" class="button btn btn-default btn-sm"><i class="fa fa-reply-all"></i> SOLICITAR CRÉDITO</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -99,7 +102,16 @@
                     <div class="col-md-11 col-lg-11">
                         <div id="cssmenu">
                             <ul>
-                                <li><a href="apoyo.creditoandino@gmail.com">Solicitar ayuda</a></li>
+                                <li><a href="index.html">Inicio</a>
+                                </li>
+                                <li><a href="#FAQ">Preguntas Frecuentes</a></li>
+                                <li><a href="#">Servicios</a>
+                                    <ul>
+                                        <li><a href="formulariocredito.html">Crédito de libre inversión con hipoteca</a></li>
+                                        <li><a href="formularioavaluoprincipal.html">Avaluo grátis</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contáctanos</a></li>
                             </ul>
                         </div>
                     </div>
@@ -107,7 +119,6 @@
             </div>
         </div>
     </header>
-    <!-- end of header area -->
     <!-- end of page header -->
     <section class="section-padding contact-us-padding">
         <div class="container">
@@ -125,8 +136,26 @@
                         <div class="row list-input">
                             <div class="col-md-6">
                                 <div class="single-get-touch">
-                                    <label for="codigoprestamo">Codigo Prestamo</label>
-                                    <input type="number" name="codigoprestamo" placeholder="Codigo" required>
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-get-touch">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mr0">
+                                <div class="single-get-touch">
+                                    <label for="email">Correo Electrónico</label>
+                                    <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-get-touch">
+                                    <label for="telefono">Teléfono</label>
+                                    <input type="number" name="telefono" id="telefono" placeholder="Teléfono" required>
                                 </div>
                             </div>
                             <div class="col-md-6 mr0">
@@ -222,15 +251,29 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="single-get-touch">
+                                    <label for="ascensores">¿Cuántos ascensores?</label>
+                                    <select name="garajes" required>
+                                        <option value="seleccion">Selecciona una opción</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-get-touch">
                                     <label for="tiempo">¿Cuál es el tiempo de construido?</label>
                                     <select name="tiempo" required>
                                         <option value="seleccion">Selecciona una opción</option>
-                                        <option value="1">1-5 años</option>
-                                        <option value="2">6-10 años</option>
-                                        <option value="3">10-15 años</option>
-                                        <option value="3">15-20 años</option>
-                                        <option value="3">20-25 años</option>
-                                        <option value="3">25+</option>
+                                        <option value="1">Sobre plano</option>
+                                        <option value="2">En construcción</option>
+                                        <option value="3">Para estrenar</option>
+                                        <option value="4">0-5 años</option>
+                                        <option value="5">5-10 años</option>
+                                        <option value="6">10-20 años</option>
+                                        <option value="7">20+</option>
                                     </select>
                                 </div>
                             </div>
@@ -295,6 +338,19 @@
                                     </label>
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                                <p>Estoy de acuerdo con la <a href="politica.html">política de manejo de la información</a></p>
+                                <div class="single-get-check" name="politicaaceptar" required>
+                                    <label class="radiobox">Si
+                                        <input type="checkbox" name="Si" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="radiobox">No
+                                        <input type="checkbox" name="no">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
                             <div class="col-md-12">
                                 <div class="single-get-touch">
                                     <button type="submit" name="submit" class="btn btn-default btn-sm">ENVIAR</button>
@@ -302,6 +358,52 @@
                             </div>
                         </div>
                     </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- start footer area -->
+    <section class="footer-area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-lg-4">
+                    <div class="footer-widget" >
+                        <div class="footer-title">
+                            <img src="asset/img/hipo.png" alt="" />
+                        </div>
+                        <p>CreditoAndino es una manera diferente de concebir nuestra relación con el dinero, nuestro objetivo es ayudarte a ti a cumplir tus sueños.</p>
+                        <div class="mail">
+                            <span>Preguntas :</span><a href="apoyo.creditoandino@gmail.com">apoyo.creditoandino@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="footer-widget pages-widget">
+                        <div class="footer-title">
+                            <h4>Soluciones</h4>
+                        </div>
+                        <ul>
+                            <li><a href="formulariocredito.html">Formulario crédito de libre inversión</a></li>
+                            <li><a href="politica.html">Política del tratamiento de la información</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <div class="footer-title">
+                            <h4>Newsletter</h4>
+                        </div>
+                        <div class="form-widget">
+                            <p>Entérate de nuestras ofertas y lanzamientos exclusivos</p>
+                            <form name="newsletter" action="thank-you.html" method="POST" netlify>
+                                <div class="newsletter">
+                                    <label for="envalope" class="fa fa-envelope"></label>
+                                    <input id="envalope" type="email" name="email" placeholder="Correo electrónico">
+                                </div>
+                                <button type="submit" class="button btn btn-default btn-lg">Subscríbete</button>
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -315,7 +417,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 text-right">
-                    <div class="footer-nave">
+                    <<div class="footer-nave">
                         <a href="https://www.facebook.com/CreditoAndino-1503888016400695/"><i class="fa fa-facebook-square"></i></a>
                         <a href="https://www.instagram.com/creditoandino/"><i class="fa fa-instagram"></i></a>
                     </div>
@@ -324,9 +426,9 @@
         </div>
     </div>
     <!-- end of footer area -->
+    <!-- Optional JavaScript -->
     <script src="asset/js/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="asset/js/jquery-ui.js"></script>
     <script src="asset/js/popper.min.js"></script>
     <script src="asset/js/bootstrap.min.js"></script>
     <script src="asset/js/jquery.nice-select.js"></script>
@@ -335,5 +437,4 @@
     <script src="asset/js/slider.js"></script>
     <script src="asset/js/active.js"></script>
 </body>
-
 </html>

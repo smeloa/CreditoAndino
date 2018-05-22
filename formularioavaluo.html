@@ -220,17 +220,31 @@
                                     </select>
                                 </div>
                             </div>
+                             <div class="col-md-6">
+                                <div class="single-get-touch">
+                                    <label for="ascensores">¿Cuántos ascensores?</label>
+                                    <select name="garajes" required>
+                                        <option value="seleccion">Selecciona una opción</option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                    </select>
+                                </div>
+                            </div>  
                             <div class="col-md-6">
                                 <div class="single-get-touch">
                                     <label for="tiempo">¿Cuál es el tiempo de construido?</label>
                                     <select name="tiempo" required>
                                         <option value="seleccion">Selecciona una opción</option>
-                                        <option value="1">1-5 años</option>
-                                        <option value="2">6-10 años</option>
-                                        <option value="3">10-15 años</option>
-                                        <option value="3">15-20 años</option>
-                                        <option value="3">20-25 años</option>
-                                        <option value="3">25+</option>
+                                        <option value="1">Sobre plano</option>
+                                        <option value="2">En construcción</option>
+                                        <option value="3">Para estrenar</option>
+                                        <option value="4">0-5 años</option>
+                                        <option value="5">5-10 años</option>
+                                        <option value="6">10-20 años</option>
+                                        <option value="7">20+</option>
                                     </select>
                                 </div>
                             </div>
@@ -291,6 +305,19 @@
                                     </label>
                                     <label class="radiobox">Vista exterior
                                         <input type="checkbox" name="vistaexterior">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p>Estoy de acuerdo con la <a href="politica.html">política de manejo de la información</a></p>
+                                <div class="single-get-check" name="politicaaceptar" required>
+                                    <label class="radiobox">Si
+                                        <input type="checkbox" name="Si" checked="checked">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="radiobox">No
+                                        <input type="checkbox" name="no">
                                         <span class="checkmark"></span>
                                     </label>
                                 </div>
